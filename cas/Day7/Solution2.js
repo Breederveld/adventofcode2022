@@ -44,6 +44,7 @@ const fs = require("fs");
     for(let directory of sortedarray) {
         if(directory.totalSize > neededspace) {
             console.log(directory.name)
+            break;
         }
     }
     console.log(totalsize);
